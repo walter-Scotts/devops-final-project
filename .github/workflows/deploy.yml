@@ -1,0 +1,73 @@
+name: DevOps Modern End-to-End Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy Applications
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout the source code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Install Java 17
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # Build the Java application
+      - name: Build Java Application
+        working-directory: java-app
+        run: mvn clean package
+
+      # Build Portfolio Docker Image
+      - name: Build Portfolio Docker Image
+        run: docker build -t portfolio-app ./portfolio
+
+      # Build Java Docker Image
+      - name: Build Java Docker Image
+        run: docker build -t java-app ./java-app
+
+      # Connect to EC2 and deploy
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/devops-final-project
+
+            echo "Pulling latest source code..."
+            git pull origin main
+
+            echo "Stopping old containers..."
+            sudo docker compose down
+
+            echo "Building and starting containers..."
+            sudo docker compose up -d --build
+
+            echo "Removing unused Docker images..."
+            sudo docker image prune -f
+
+      # Verify Portfolio Application
+      - name: Verify Portfolio Application
+        run: |
+          curl --retry 10 --retry-delay 5 http://${{ secrets.EC2_HOST }}:5000
+
+      # Verify Java Application
+      - name: Verify Java Application
+        run: |
+          curl --retry 10 --retry-delay 5 http://${{ secrets.EC2_HOST }}:8080
+
+      # Finish
+      - name: Deployment Successful
+        run: echo "Deployment completed successfully!"
