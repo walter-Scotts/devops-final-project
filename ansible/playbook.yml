@@ -1,0 +1,32 @@
+---
+- name: Configure DevOps Server
+  hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Clone GitHub Repository
+      git:
+        repo: https://github.com/walter-Scotts/devops-final-project.git
+        dest: /home/ubuntu/devops-final-project
+        version: main
