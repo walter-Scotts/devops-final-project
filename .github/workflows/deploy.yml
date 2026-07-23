@@ -25,7 +25,7 @@ jobs:
 
       # Build the Java application
       - name: Build Java Application
-        working-directory: java-app
+        working-directory: samplejavaapp
         run: mvn clean package
 
       # Build Portfolio Docker Image
@@ -34,7 +34,7 @@ jobs:
 
       # Build Java Docker Image
       - name: Build Java Docker Image
-        run: docker build -t java-app ./java-app
+        run: docker build -t java-app ./samplejavaapp
 
       # Connect to EC2 and deploy
       - name: Deploy to EC2
