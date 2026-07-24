@@ -50,10 +50,10 @@ jobs:
             git pull origin main
 
             echo "Stopping old containers..."
-            sudo docker compose down
+            sudo docker-compose down
 
             echo "Building and starting containers..."
-            sudo docker compose up -d --build
+            sudo docker-compose up -d --build
 
             echo "Removing unused Docker images..."
             sudo docker image prune -f
