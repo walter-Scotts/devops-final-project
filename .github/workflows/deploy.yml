@@ -74,3 +74,27 @@ jobs:
       # Finish
       - name: Deployment Successful
         run: echo "Deployment completed successfully!"
+name: DevOps CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Docker Compose file
+        run: docker compose config
+
+      - name: Show repository structure
+        run: ls -R
