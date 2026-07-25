@@ -23,6 +23,9 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Verify Maven
+         run: mvn -version
+
       # Build the Java application
       - name: Build Java Application
         working-directory: samplejavaapp
