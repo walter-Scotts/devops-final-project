@@ -286,7 +286,7 @@ Add screenshots here after completing the project.
 ### AWS EC2 Instance
 
 ```
-images/aws-ec2.png
+![AWS EC2 Instance](screenshots/ec2-instance.png)
 ```
 
 ---
@@ -294,7 +294,7 @@ images/aws-ec2.png
 ### Portfolio Website
 
 ```
-images/portfolio-homepage.png
+![Portfolio Application](screenshots/portfolio-app.png)
 ```
 
 ---
@@ -302,7 +302,15 @@ images/portfolio-homepage.png
 ### Java Application
 
 ```
-images/java-application.png
+![Java Application](screenshots/java-app.png)
+```
+
+---
+
+### Terraform Output
+
+```
+![Terraform Output](screenshots/terraform-output.png)
 ```
 
 ---
@@ -310,7 +318,7 @@ images/java-application.png
 ### Docker Containers
 
 ```
-images/docker-ps.png
+![Docker Containers](screenshots/docker-containers.png)
 ```
 
 ---
