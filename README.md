@@ -278,7 +278,7 @@ Add screenshots here after completing the project.
 ### GitHub Actions
 
 ```
-images/github-actions-success.png
+![GitHub Actions Success](screenshots/github-actions.png)
 ```
 
 ---
