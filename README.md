@@ -1,5 +1,11 @@
 # 🚀 DevOps Modern End-to-End Deployment Project
 
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-blue)
+![Docker](https://img.shields.io/badge/Docker-Containers-blue)
+![Ansible](https://img.shields.io/badge/Ansible-Automation-red)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-black)
+
 ## 📖 Project Overview
 
 This project demonstrates the implementation of a complete **DevOps pipeline** for deploying and managing two different applications using modern DevOps tools and practices.
@@ -14,6 +20,17 @@ The project was built using:
 - Continuous Deployment (GitHub Actions)
 - Amazon Web Services (AWS EC2)
 
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/walter-Scotts/devops-final-project.git
+
+cd devops-final-project
+```
 ---
 
 # 🎯 Project Objectives
@@ -153,6 +170,20 @@ This ensures every server is configured consistently.
 
 ---
 
+## 📋 Prerequisites
+
+Before running this project, ensure you have:
+
+- AWS Account
+- Terraform
+- Docker
+- Docker Compose
+- Ansible
+- Git
+- GitHub Account
+
+---
+
 # 🐳 Containerization
 
 Both applications are containerized using Docker.
@@ -265,61 +296,61 @@ Deployment was confirmed by:
 
 # 📸 Screenshots
 
-Add screenshots here after completing the project.
+
 
 ### GitHub Repository
 
-```
+
 ![GitHub Repository](screenshots/screenshots.png)
-```
+
 
 ---
 
 ### GitHub Actions
 
-```
+
 ![GitHub Actions Success](screenshots/github-actions.png)
-```
+
 
 ---
 
 ### AWS EC2 Instance
 
-```
+
 ![AWS EC2 Instance](screenshots/ec2-instance.png)
-```
+
 
 ---
 
 ### Portfolio Website
 
-```
+
 ![Portfolio Application](screenshots/portfolio-app.png)
-```
+
 
 ---
 
 ### Java Application
 
-```
+
 ![Java Application](screenshots/java-app.png)
-```
+
 
 ---
 
 ### Terraform Output
 
-```
+
 ![Terraform Output](screenshots/terraform-output.png)
-```
+
 
 ---
 
 ### Docker Containers
 
-```
+
 ![Docker Containers](screenshots/docker-containers.png)
-```
+
 
 ---
 
@@ -371,7 +402,7 @@ GitHub:
 
 https://github.com/walter-Scotts
 
-LinkedIn:
+LinkedIn:eyinafe-abiodun-emmanuel-a0781541b
 
 (Add your LinkedIn Profile)
 
@@ -402,3 +433,9 @@ The implementation follows modern DevOps best practices by combining:
 - Continuous Deployment
 
 The result is a fully automated deployment pipeline capable of consistently deploying multiple applications on AWS with minimal manual intervention.
+
+---
+
+# 📄 License
+
+This project is for educational and portfolio purposes.
