@@ -270,7 +270,7 @@ Add screenshots here after completing the project.
 ### GitHub Repository
 
 ```
-images/github-repository.png
+![GitHub Repository](screenshots/screenshots.png)
 ```
 
 ---
