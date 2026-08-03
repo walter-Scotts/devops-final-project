@@ -352,6 +352,65 @@ Deployment was confirmed by:
 ![Docker Containers](screenshots/docker-containers.png)
 
 
+# 📸 Kubernetes Screenshots
+
+## Kubernetes Namespace
+
+![Kubernetes Namespace](screenshots/kubernetes/namespaces.png)
+
+---
+
+## Deployment
+
+![Deployment](screenshots/kubernetes/deployments.png)
+
+---
+
+## Running Pods
+
+![Running Pods](screenshots/kubernetes/pods.png)
+
+---
+
+## Service
+
+![Service](screenshots/kubernetes/services.png)
+
+---
+
+## NodePort Service URL
+
+![NodePort URL](screenshots/kubernetes/service-url.png)
+
+---
+
+## Portfolio Application Running on Kubernetes
+
+![Portfolio Application](screenshots/kubernetes/portfolio-browser.png)
+
+---
+
+# 🛠 Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Kubernetes
+- Minikube
+- kubectl
+- Docker
+- Containerized Python Flask Applications
+- Kubernetes Pods
+- Deployments
+- ReplicaSets
+- Services
+- NodePort Networking
+- Namespaces
+- Application Scaling
+- Kubernetes Self-Healing
+- YAML Manifests
+- Git & GitHub
+- Linux Command Line
+
 ---
 
 # 🚀 Future Improvements
@@ -366,6 +425,21 @@ Future enhancements include:
 - Configure AWS Load Balancer
 - Add Automated Unit Testing
 - Integrate AWS Secrets Manager
+
+---
+
+# 🚀 Future Improvements
+
+Future enhancements for this project include:
+
+- Deploy the application to Amazon EKS
+- Configure an Ingress Controller
+- Secure the application with HTTPS using cert-manager
+- Package the application using Helm Charts
+- Implement GitOps with Argo CD
+- Add Prometheus and Grafana for monitoring
+- Configure Horizontal Pod Autoscaling (HPA)
+- Integrate CI/CD with GitHub Actions
 
 ---
 
@@ -433,6 +507,20 @@ The implementation follows modern DevOps best practices by combining:
 - Continuous Deployment
 
 The result is a fully automated deployment pipeline capable of consistently deploying multiple applications on AWS with minimal manual intervention.
+
+---
+
+# 🎯 Project Outcomes
+
+Through this project I learned how to:
+
+- Build and manage Kubernetes clusters using Minikube.
+- Deploy containerized applications with Deployments.
+- Expose applications using Kubernetes Services.
+- Scale applications using ReplicaSets.
+- Organize workloads using Namespaces.
+- Troubleshoot Kubernetes deployments.
+- Apply Kubernetes best practices using YAML manifests.
 
 ---
 
