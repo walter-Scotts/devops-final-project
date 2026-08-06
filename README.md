@@ -1,10 +1,16 @@
-# 🚀 DevOps Modern End-to-End Deployment Project
+# 🚀 DevOps Modern End-to-End Deployment Pipeline
 
-![AWS](https://img.shields.io/badge/AWS-EC2-orange)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-blue)
-![Docker](https://img.shields.io/badge/Docker-Containers-blue)
-![Ansible](https://img.shields.io/badge/Ansible-Automation-red)
-![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-black)
+<p align="center">
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</p>
 
 ## 📖 Project Overview
 
@@ -296,150 +302,92 @@ Deployment was confirmed by:
 
 # 📸 Screenshots
 
-
-
-### GitHub Repository
-
-
-![GitHub Repository](screenshots/screenshots.png)
-
-
 ---
 
-### GitHub Actions
+## ☁️ AWS Infrastructure
 
-
-![GitHub Actions Success](screenshots/github-actions.png)
-
-
----
-
-### AWS EC2 Instance
-
+### EC2 Instance
 
 ![AWS EC2 Instance](screenshots/ec2-instance.png)
 
-
----
-
-### Portfolio Website
-
-
-![Portfolio Application](screenshots/portfolio-app.png)
-
-
----
-
-### Java Application
-
-
-![Java Application](screenshots/java-app.png)
-
-
----
-
 ### Terraform Output
-
 
 ![Terraform Output](screenshots/terraform-output.png)
 
-
 ---
 
-### Docker Containers
+## 🐳 Docker Deployment
 
+### Running Docker Containers
 
 ![Docker Containers](screenshots/docker-containers.png)
 
+### Portfolio Application
 
-# 📸 Kubernetes Screenshots
+![Portfolio Application](screenshots/portfolio-app.png)
 
-## Kubernetes Namespace
+### Java Application
 
-![Kubernetes Namespace](screenshots/kubernetes/namespaces.png)
+![Java Application](screenshots/java-app.png)
 
 ---
 
-## Deployment
+## ⚙️ GitHub Actions CI/CD
+
+### Successful Deployment Workflow
+
+![GitHub Actions](screenshots/github-actions.png)
+
+---
+
+## ☸️ Kubernetes Deployment
+
+### Namespace
+
+![Namespace](screenshots/kubernetes/namespaces.png)
+
+### Deployment
 
 ![Deployment](screenshots/kubernetes/deployments.png)
 
----
+### Running Pods
 
-## Running Pods
+![Pods](screenshots/kubernetes/pods.png)
 
-![Running Pods](screenshots/kubernetes/pods.png)
+### Services
 
----
+![Services](screenshots/kubernetes/services.png)
 
-## Service
-
-![Service](screenshots/kubernetes/services.png)
-
----
-
-## NodePort Service URL
+### NodePort Service URL
 
 ![NodePort URL](screenshots/kubernetes/service-url.png)
 
----
+### Portfolio Running on Kubernetes
 
-## Portfolio Application Running on Kubernetes
-
-![Portfolio Application](screenshots/kubernetes/portfolio-browser.png)
+![Portfolio Browser](screenshots/kubernetes/portfolio-browser.png)
 
 ---
 
-# 🛠 Skills Demonstrated
+## 📂 GitHub Repository
 
-This project demonstrates practical experience with:
+### Repository Overview
 
-- Kubernetes
-- Minikube
-- kubectl
-- Docker
-- Containerized Python Flask Applications
-- Kubernetes Pods
-- Deployments
-- ReplicaSets
-- Services
-- NodePort Networking
-- Namespaces
-- Application Scaling
-- Kubernetes Self-Healing
-- YAML Manifests
-- Git & GitHub
-- Linux Command Line
+![GitHub Repository](screenshots/screenshots.png)
 
 ---
 
 # 🚀 Future Improvements
 
-Future enhancements include:
-
-- Configure HTTPS using Let's Encrypt
-- Deploy behind Nginx Reverse Proxy
-- Publish Docker images to Docker Hub
-- Deploy applications to Kubernetes
-- Add Prometheus & Grafana Monitoring
-- Configure AWS Load Balancer
-- Add Automated Unit Testing
-- Integrate AWS Secrets Manager
-
----
-
-# 🚀 Future Improvements
-
-Future enhancements for this project include:
+Future enhancements planned for this project include:
 
 - Deploy the application to Amazon EKS
-- Configure an Ingress Controller
+- Configure Kubernetes Ingress
 - Secure the application with HTTPS using cert-manager
-- Package the application using Helm Charts
+- Package deployments with Helm Charts
 - Implement GitOps with Argo CD
-- Add Prometheus and Grafana for monitoring
+- Integrate Prometheus & Grafana for monitoring
 - Configure Horizontal Pod Autoscaling (HPA)
-- Integrate CI/CD with GitHub Actions
+- Enhance the CI/CD pipeline with automated testing and security scanning
 
 ---
 
@@ -447,38 +395,57 @@ Future enhancements for this project include:
 
 This project demonstrates practical experience with:
 
-- Infrastructure as Code
-- Cloud Computing
+### ☁️ Cloud & Infrastructure
+- Amazon Web Services (AWS EC2)
+- Infrastructure as Code (Terraform)
+- Cloud Infrastructure Provisioning
+
+### ⚙️ Configuration Management
+- Ansible
+- Linux System Administration
+- Server Automation
+
+### 🐳 Containerization
 - Docker
 - Docker Compose
-- Linux Administration
-- Configuration Management
+- Python Flask Containerization
+- Java Application Deployment (Apache Tomcat)
+
+### ☸️ Kubernetes
+- Kubernetes
+- Minikube
+- kubectl
+- Namespaces
+- Deployments
+- ReplicaSets
+- Services
+- NodePort Networking
+- Application Scaling
+- Self-Healing Workloads
+- YAML Manifests
+
+### 🚀 CI/CD & Version Control
 - Git
 - GitHub
 - GitHub Actions
-- CI/CD
-- AWS
-- Terraform
-- Ansible
-- Python Flask
-- Java
-- Apache Tomcat
+- Continuous Integration & Continuous Deployment (CI/CD)
+
+### 📖 Documentation
+- Technical Documentation
+- Deployment Automation
+- DevOps Best Practices
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Eyinafe Abiodun Emmanuel**
 
-Junior DevOps Engineer
+DevOps Engineer | Cloud Engineer | Platform Engineer
 
-GitHub:
-
-https://github.com/walter-Scotts
-
-LinkedIn:eyinafe-abiodun-emmanuel-a0781541b
-
-(Add your LinkedIn Profile)
+- 📧 Email: emmanuelabbeycity09@gmail.com
+- 🌐 GitHub: https://github.com/walter-Scotts
+- 💼 LinkedIn: https://linkedin.com/in/eyinafe-abiodun-emmanuel-a0781541b
 
 ---
 
