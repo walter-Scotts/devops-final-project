@@ -1,14 +1,53 @@
 # 🚀 DevOps Modern End-to-End Deployment Pipeline
 
-<p align="center">
+[![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)](https://aws.amazon.com/)
+[![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform)](https://www.terraform.io/)
+[![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes)](https://kubernetes.io/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?logo=prometheus)](https://prometheus.io/)
+[![Grafana](https://img.shields.io/badge/Grafana-Observability-F46800?logo=grafana)](https://grafana.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=github-actions)](https://github.com/features/actions)
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+> **End-to-end DevOps and Platform Engineering project demonstrating Infrastructure as Code, containerization, configuration management, Kubernetes orchestration, CI/CD automation, and production-style observability.**
+
+## 🎯 Project Summary
+
+This project demonstrates the design and implementation of a modern DevOps delivery workflow for deploying and monitoring containerized applications.
+
+The platform combines **AWS, Terraform, Ansible, Docker, Kubernetes, GitHub Actions, Prometheus, and Grafana** to demonstrate the complete lifecycle from infrastructure provisioning and application deployment through continuous delivery and Kubernetes observability.
+
+### What I Built
+
+- ☁️ Provisioned cloud infrastructure using **Terraform and AWS**
+- 🐳 Containerized applications using **Docker**
+- ⚙️ Automated server configuration and deployment using **Ansible**
+- ☸️ Deployed workloads to **Kubernetes**
+- 🔄 Automated application delivery using **GitHub Actions**
+- 🔥 Implemented metrics collection using **Prometheus**
+- 📈 Built operational dashboards using **Grafana**
+- 📊 Monitored cluster, node, pod, and deployment health using **PromQL**
+- 🧪 Verified infrastructure, application, and monitoring components end-to-end
+
+### Core Engineering Focus
+
+```text
+Infrastructure as Code
+        ↓
+AWS Infrastructure
+        ↓
+Configuration Management
+        ↓
+Docker Containers
+        ↓
+CI/CD Automation
+        ↓
+Kubernetes
+        ↓
+Prometheus
+        ↓
+Grafana
+        ↓
+Observability
 
 </p>
 
