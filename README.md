@@ -385,7 +385,7 @@ Future enhancements planned for this project include:
 - Secure the application with HTTPS using cert-manager
 - Package deployments with Helm Charts
 - Implement GitOps with Argo CD
-- Integrate Prometheus & Grafana for monitoring
+- Enhance Prometheus & Grafana monitoring with custom alerts, dashboards, and SLO-based observability
 - Configure Horizontal Pod Autoscaling (HPA)
 - Enhance the CI/CD pipeline with automated testing and security scanning
 
