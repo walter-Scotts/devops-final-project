@@ -1,145 +1,33 @@
-# 🚀 DevOps Modern End-to-End Deployment Pipeline
+## ☸️ Project 3 — Kubernetes Monitoring & Observability
 
-[![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)](https://aws.amazon.com/)
-[![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform)](https://www.terraform.io/)
-[![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker)](https://www.docker.com/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes)](https://kubernetes.io/)
-[![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?logo=prometheus)](https://prometheus.io/)
-[![Grafana](https://img.shields.io/badge/Grafana-Observability-F46800?logo=grafana)](https://grafana.com/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=github-actions)](https://github.com/features/actions)
+This phase of the project focuses on deploying containerized workloads to Kubernetes and implementing an observability stack using Prometheus and Grafana.
 
-> **End-to-end DevOps and Platform Engineering project demonstrating Infrastructure as Code, containerization, configuration management, Kubernetes orchestration, CI/CD automation, and production-style observability.**
+### Monitoring Stack
 
-## 🎯 Project Summary
+- ☸️ Kubernetes
+- 🔥 Prometheus
+- 📈 Grafana
+- 📊 kube-state-metrics
+- 🖥️ Node Exporter
+- 🔎 PromQL
 
-This project demonstrates the design and implementation of a modern DevOps delivery workflow for deploying and monitoring containerized applications.
+### Observability Coverage
 
-The platform combines **AWS, Terraform, Ansible, Docker, Kubernetes, GitHub Actions, Prometheus, and Grafana** to demonstrate the complete lifecycle from infrastructure provisioning and application deployment through continuous delivery and Kubernetes observability.
+- Cluster CPU usage
+- Cluster memory usage
+- Node CPU usage
+- Node memory usage
+- Pod CPU usage
+- Pod memory usage
+- Pod restart count
+- Node network receive/transmit
+- Deployment desired replicas
+- Deployment available replicas
+- Deployment health
 
-### What I Built
+### Operational Outcome
 
-- ☁️ Provisioned cloud infrastructure using **Terraform and AWS**
-- 🐳 Containerized applications using **Docker**
-- ⚙️ Automated server configuration and deployment using **Ansible**
-- ☸️ Deployed workloads to **Kubernetes**
-- 🔄 Automated application delivery using **GitHub Actions**
-- 🔥 Implemented metrics collection using **Prometheus**
-- 📈 Built operational dashboards using **Grafana**
-- 📊 Monitored cluster, node, pod, and deployment health using **PromQL**
-- 🧪 Verified infrastructure, application, and monitoring components end-to-end
-
-### Core Engineering Focus
-
-```text
-Infrastructure as Code
-        ↓
-AWS Infrastructure
-        ↓
-Configuration Management
-        ↓
-Docker Containers
-        ↓
-CI/CD Automation
-        ↓
-Kubernetes
-        ↓
-Prometheus
-        ↓
-Grafana
-        ↓
-Observability
-
-</p>
-
-## 📖 Project Overview
-
-This project demonstrates the implementation of a complete **DevOps pipeline** for deploying and managing two different applications using modern DevOps tools and practices.
-
-The solution automates infrastructure provisioning, server configuration, application containerization, and deployment through a CI/CD pipeline.
-
-The project was built using:
-
-- Infrastructure as Code (Terraform)
-- Configuration Management (Ansible)
-- Containerization (Docker & Docker Compose)
-- Continuous Deployment (GitHub Actions)
-- Amazon Web Services (AWS EC2)
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/walter-Scotts/devops-final-project.git
-
-cd devops-final-project
-```
----
-
-# 🎯 Project Objectives
-
-The objective of this project is to:
-
-- Provision cloud infrastructure using Terraform
-- Configure servers automatically using Ansible
-- Containerize multiple applications with Docker
-- Deploy applications using Docker Compose
-- Automate deployments using GitHub Actions
-- Demonstrate an end-to-end DevOps workflow
-
----
-
-# 🛠 Technology Stack
-
-| Category | Technology |
-|-----------|------------|
-| Cloud Provider | AWS EC2 |
-| Infrastructure as Code | Terraform |
-| Configuration Management | Ansible |
-| Containerization | Docker |
-| Multi-Container Management | Docker Compose |
-| CI/CD | GitHub Actions |
-| Version Control | Git & GitHub |
-| Portfolio Application | Python Flask |
-| Java Application | Apache Tomcat |
-| Operating System | Ubuntu Linux |
-
----
-
-# 📂 Project Structure
-
-```text
-devops-final-project/
-
-├── terraform/
-│   ├── main.tf
-│   ├── provider.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│
-├── ansible/
-│   ├── inventory
-│   └── playbook.yml
-│
-├── portfolio/
-│   ├── app.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── templates/
-│
-├── samplejavaapp/
-│   └── Dockerfile
-│
-├── docker-compose.yml
-│
-└── .github/
-    └── workflows/
-        └── deploy.yml
-```
-
----
+The monitoring platform provides centralized visibility into Kubernetes infrastructure, workloads, and deployment health through Grafana dashboards backed by Prometheus metrics.
 
 # 🏗 System Architecture
 
@@ -176,6 +64,38 @@ Port 5000      Port 8080
 
 ---
 
+# ☸️ Kubernetes Observability Architecture
+
+The Kubernetes monitoring environment uses Prometheus to collect metrics from the cluster and Grafana to visualize operational health.
+
+```text
+Kubernetes Cluster
+        │
+        ├── Nodes
+        │     └── Node Exporter
+        │
+        ├── Pods
+        │     ├── Portfolio Application
+        │     └── Java Application
+        │
+        ├── Deployments
+        │
+        └── kube-state-metrics
+                  │
+                  ▼
+             Prometheus
+                  │
+               PromQL
+                  │
+                  ▼
+               Grafana
+                  │
+                  ▼
+        Kubernetes Monitoring Dashboard
+```
+
+---
+
 # ☁️ Infrastructure Provisioning
 
 Infrastructure is provisioned using **Terraform**, enabling Infrastructure as Code (IaC) for repeatable deployments.
@@ -190,8 +110,8 @@ Terraform provisions:
 ## Security Group Rules
 
 | Port | Purpose |
-|------|----------|
-| 22 | SSH |
+|------|---------|
+| 22   | SSH |
 | 5000 | Portfolio Application |
 | 8080 | Java Application |
 
@@ -330,12 +250,15 @@ http://<EC2_PUBLIC_IP>:8080/sampleapp/
 
 ## CI/CD Verification
 
-Deployment was confirmed by:
+The deployment pipeline is configured to:
 
-- Successful GitHub Actions workflow
-- Running Docker containers
-- Updated application content
-- Accessible application URLs
+- Trigger automatically when changes are pushed to `main`
+- Connect to the EC2 instance through SSH
+- Pull the latest repository changes
+- Build Docker images
+- Restart services using Docker Compose
+
+> **Current status:** The CI/CD workflow is configured, but the latest deployment verification is pending because the EC2 environment is temporarily unavailable.
 
 ---
 
@@ -373,7 +296,7 @@ Deployment was confirmed by:
 
 ## ⚙️ GitHub Actions CI/CD
 
-### Successful Deployment Workflow
+### CI/CD Workflow
 
 ![GitHub Actions](screenshots/github-actions.png)
 
@@ -463,6 +386,18 @@ This project demonstrates practical experience with:
 - Self-Healing Workloads
 - YAML Manifests
 
+### 📊 Observability & Monitoring
+
+- Prometheus
+- Grafana
+- PromQL
+- kube-state-metrics
+- Node Exporter
+- Kubernetes Metrics
+- Infrastructure Monitoring
+- Workload Monitoring
+- Dashboard Development
+
 ### 🚀 CI/CD & Version Control
 - Git
 - GitHub
@@ -512,7 +447,7 @@ The implementation follows modern DevOps best practices by combining:
 - Containerization
 - Continuous Deployment
 
-The result is a fully automated deployment pipeline capable of consistently deploying multiple applications on AWS with minimal manual intervention.
+The result is an automated DevOps deployment pipeline designed to consistently provision infrastructure, configure servers, deploy containerized applications, and support Kubernetes-based monitoring with minimal manual intervention.
 
 ---
 
@@ -527,6 +462,11 @@ Through this project I learned how to:
 - Organize workloads using Namespaces.
 - Troubleshoot Kubernetes deployments.
 - Apply Kubernetes best practices using YAML manifests.
+- Implement Prometheus-based Kubernetes metrics collection.
+- Build Grafana dashboards for cluster, node, pod, and deployment monitoring.
+- Use PromQL to analyze infrastructure and workload metrics.
+- Monitor pod restarts, resource utilization, network traffic, and deployment health.
+- Troubleshoot Kubernetes workloads using `kubectl`, Prometheus, and Grafana.
 
 ---
 
