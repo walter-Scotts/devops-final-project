@@ -302,6 +302,22 @@ The deployment pipeline is configured to:
 
 ---
 
+## 📊 Kubernetes Monitoring & Observability
+
+### Full Grafana Dashboard Overview
+
+![Grafana Kubernetes Monitoring Dashboard](screenshots/monitoring/01-full-dashboard-overview.png)
+
+### Node Resource Usage
+
+![Grafana Node Resource Usage](screenshots/monitoring/project-3-node-resource-usage.png)
+
+### Pod & Workload Health
+
+![Grafana Pod and Workload Health](screenshots/monitoring/project-3-pod-workload-health.png)
+
+---
+
 ## ☸️ Kubernetes Deployment
 
 ### Namespace
